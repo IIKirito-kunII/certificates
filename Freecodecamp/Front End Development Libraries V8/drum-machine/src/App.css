@@ -1,0 +1,104 @@
+.container {
+  border: 5px solid crimson;
+  width: 670px;
+  display: flex;
+  padding: 20px;
+  background-color: tan;
+}
+.keypad {
+  width: 330px;
+  height: 270px;
+}
+button {
+  font-size: 30px;
+  width: 100px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+}
+button.active {
+  background-color: crimson;
+  color: black;
+  border: 5px solid crimson;
+  box-shadow: none;
+}
+p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.info {
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.power {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display {
+  margin: auto;
+  width: 180px;
+  height: 50px;
+  background-color: black;
+  border: solid;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.select {
+  margin: 4px;
+  border: solid;
+  width: 54px;
+  height: 24px;
+  background-color: black;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.inner {
+  width: 50%;
+  height: 100%;
+  background-color: crimson;
+  cursor: pointer;
+}
+.trigger {
+  cursor: pointer;
+  appearance: none;
+  width: 200px;
+  height: 8px;
+  border: 3px solid black;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.trigger::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 30px;
+  background-color: crimson;
+  cursor: pointer;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+input:focus {
+  outline: none;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    border: none;
+  }
+}

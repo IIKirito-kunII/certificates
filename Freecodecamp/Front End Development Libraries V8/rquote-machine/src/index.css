@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 1s ease;
+  background-image: linear-gradient(to right bottom, black, #ffedbca8);
+}

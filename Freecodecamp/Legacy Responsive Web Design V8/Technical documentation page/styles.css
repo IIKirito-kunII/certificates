@@ -1,0 +1,146 @@
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #333;
+  --header-color: #444;
+  --navbar-bg: #fff;
+  --navbar-border: rgba(0, 22, 22, 0.5);
+  --code-bg: #e8e8e8;
+}
+
+body.dark-theme {
+  --bg-color: #2c2c2c;
+  --text-color: #e0e0e0;
+  --header-color: #e0e0e0;
+  --navbar-bg: #333;
+  --navbar-border: rgba(255, 255, 255, 0.5);
+  --code-bg: #444;
+}
+
+html,
+body {
+  min-width: 300px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 100%;
+  border-right: 2px solid var(--navbar-border);
+  background-color: var(--navbar-bg);
+}
+
+header {
+  color: var(--header-color);
+  margin: 15px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+#main-doc {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 10px 0;
+}
+
+#navbar ul {
+  height: 85%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: var(--header-color);
+  border-top: 1px solid;
+  list-style: none;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 12px 35px;
+  color: var(--header-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 340px;
+  padding: 25px;
+  margin-bottom: 120px;
+}
+
+section article {
+  color: var(--text-color);
+  margin: 20px;
+  font-size: 1em;
+}
+
+section li {
+  margin: 20px 0 0 25px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-wrap;
+  background-color: var(--code-bg);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 850px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 220px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 300px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0;
+    margin-top: 280px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #navbar {
+    max-height: 410px;
+  }
+  #main-doc {
+    margin-left: 0;
+    padding-top: 150px
+  }
+
+  code {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    min-width: 250px;
+  }
+}

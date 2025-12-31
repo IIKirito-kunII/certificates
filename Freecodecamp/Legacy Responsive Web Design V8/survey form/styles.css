@@ -1,0 +1,142 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  margin: 1rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+/* FORM */
+form {
+  font: sans-serif;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.4rem 0.7rem;
+  width: 100%;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: darkgray;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.6rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  cursor: pointer;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: lightseagreen;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* BODY */
+body {
+  color: #f3f3f3;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url("https://imgs.search.brave.com/1BG0bIQO05RzD1dQvOn9EGcEErbhC3trKUOEau5ML8A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvaGQtYW5pbWUt/cHJyMXkxazVncXhm/Y2dwdi5qcGc");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header>
+                Technical Documentation
+                <button onclick="toggleDarkTheme()">Toggle Dark Theme</button>
+            </header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Installation">Installation</a></li>
+                <li><a class="nav-link" href="#Usage">Usage</a></li>
+                <li><a class="nav-link" href="#License">License</a></li>
+                <li><a class="nav-link" href="#icense">icense</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header>
+                    Introduction
+                </header>
+                <article>
+                    <p>This is a technical documentation page for a project that I have been working on. It is a simple
+                        project that I have been using to learn more about web development.</p>
+                    <p>It is a simple project that I have been using to learn more about web development.</p>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                </article>
+            </section>
+            <section id="Installation" class="main-section">
+                <header>
+                    Installation
+                </header>
+                <article>
+                    <p>To install this project, you can simply clone the repository and open the index.html file in your
+                        browser.</p>
+                    <p>Alternatively, you can use the following command:</p>
+                    <code>git clone</code>
+                    <code>cd</code>
+                    <code>open index.html</code>
+                    <code>npm install</code>
+                    <code>npm start</code>
+                </article>
+            </section>
+            <section id="Usage" class="main-section">
+                <header>
+                    Usage
+                </header>
+                <article>
+                    <p>To use this project, you can simply open the index.html file in your browser and read the
+                        documentation.</p>
+                    <p>Alternatively, you can use the following command:</p>
+                </article>
+            </section>
+            <section id="License" class="main-section">
+                <header>
+                    License
+                </header>
+                <article>
+                    <p>This project is licensed under the MIT license.</p>
+                    <p>You can find the full license text <a href="https://opensource.org/licenses/MIT">here</a>.</p>
+                </article>
+                <section id="icense" class="main-section">
+                    <header>
+                        icense
+                    </header>
+                    <article>
+                        <p>This project is licensed under the MIT license.</p>
+                        <p>You can find the full license text <a href="https://opensource.org/licenses/MIT">here</a>.
+                        </p>
+                    </article>
+                </section>
+        </main>
+    </div>
+</body>
+
+<script>
+    function toggleDarkTheme() {
+      document.body.classList.toggle('dark-theme');
+    }
+  </script>
+  

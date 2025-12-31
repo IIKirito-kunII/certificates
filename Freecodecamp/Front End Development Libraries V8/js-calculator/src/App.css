@@ -1,0 +1,67 @@
+@import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+
+.container {
+  border: 10px solid yellowgreen;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+  font-family: "Share Tech Mono", sans-serif;
+  background-color: black;
+}
+.display,
+.result {
+  background-color: black;
+  width: 320px;
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: right;
+  vertical-align: text-top;
+  padding-right: 5px;
+  word-wrap: break-word;
+}
+.display {
+  color: orange;
+}
+hr {
+  width: 98%;
+  margin: 0 auto;
+}
+.result {
+  font-size: 48px;
+  line-height: 48px;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(5, 65px);
+  border-top: 10px solid yellowgreen;
+}
+button {
+  font-family: "Share Tech Mono", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  background-color: gray;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+button.active,
+button:active {
+  border-bottom: none;
+  border-right: none;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  color: black;
+}
+#add,
+#equals {
+  grid-row: span 2;
+}
+#zero {
+  grid-column: span 2;
+}
+#clear {
+  background-color: darkred;
+}
+#equals {
+  background-color: darkblue;
+}

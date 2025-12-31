@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  display: table;
+  width: 500px;
+  height: fit-content;
+  padding: 40px 50px;
+  font-size: 1.6rem;
+  text-align: center;
+  border-radius: 15px;
+  transition: color 1s ease;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 10px;
+}
+#author {
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: right;
+  font-style: italic;
+}
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  transition: background-color 1s ease;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+@media (max-width: 550px) {
+  .container {
+    width: 95%;
+  }
+}

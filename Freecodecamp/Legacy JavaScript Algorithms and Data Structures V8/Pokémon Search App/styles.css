@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+}
+body {
+  background-color: crimson;
+}
+.main {
+  width: 500px;
+  margin: auto;
+  padding: 5px;
+  background-color: white;
+  border: solid;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #7f21ab;
+  margin-bottom: 40px;
+}
+form {
+  text-align: center;
+  font-size: 18px;
+}
+input {
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  margin-right: 20px;
+}
+input:focus {
+  outline: 4px solid #7f21ab;
+}
+button {
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #7f21ab;
+  cursor: pointer;
+}
+.output {
+  height: 180px;
+  background-color: aliceblue;
+}
+.pokemon,
+.stat,
+#types,
+#sprite {
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+.pokemon p,
+.stat p,
+#types p {
+  margin: 0 5px;
+}
+#types p {
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1 rem;
+  color: white;
+  background-color: #7f21ab;
+}
+tr {
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+}
+td,
+th {
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  text-align: center;
+  padding: 6px;
+}
+
+.normal {
+  background-color: #b7b7aa;
+}
+.fire {
+  background-color: #ff6f52;
+}
+.water {
+  background-color: #42a1ff;
+}
+.electric {
+  background-color: #fecc33;
+}
+.grass {
+  background-color: #78cc55;
+}
+.ice {
+  background-color: #66ccfe;
+}
+.fighting {
+  background-color: #d3887e;
+}
+.poison {
+  background-color: #c68bb7;
+}
+.ground {
+  background-color: #dfba52;
+}
+.flying {
+  background-color: #8899ff;
+}
+.psychic {
+  background-color: #ff66a3;
+}
+.bug {
+  background-color: #aabb23;
+}
+.rock {
+  background-color: #baaa66;
+}
+.ghost {
+  background-color: #9995d0;
+}
+.dragon {
+  background-color: #9e93f1;
+}
+.dark {
+  background-color: #b59682;
+}
+.steel {
+  background-color: #abaabb;
+}
+.fairy {
+  background-color: #ed99ed;
+}
+
+@media (max-width: 520px) {
+  .main {
+    width: 100%;
+  }
+  input {
+    width: 80%;
+    margin-right: 0;
+  }
+  button {
+    width: 50%;
+    margin-top: 10px;
+  }
+  #types {
+    flex-wrap: wrap;
+  }
+  #types p {
+    margin: 5px;
+  }
+}
